@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Recommender</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Course Recommender</h1>
+    <p>Find the best courses tailored to you.</p>
+
+    <form id="recommender-form">
+      <label for="interest">Your Interests:</label>
+      <select id="interest" name="interest">
+        <option value="web development">Web Development</option>
+        <option value="data science">Data Science</option>
+        <option value="graphic design">Graphic Design</option>
+        <option value="cybersecurity">Cybersecurity</option>
+      </select>
+
+      <label for="learning-style">Preferred Learning Style:</label>
+      <select id="learning-style" name="learning-style">
+        <option value="video">Video</option>
+        <option value="interactive">Interactive</option>
+        <option value="reading">Reading</option>
+      </select>
+
+      <label for="experience">Your Experience Level:</label>
+      <select id="experience" name="experience">
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+
+      <button type="button" id="submit-btn">Get Recommendations</button>
+    </form>
+
+    <div id="output" class="output">
+      <!-- Recommendations will appear here -->
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
